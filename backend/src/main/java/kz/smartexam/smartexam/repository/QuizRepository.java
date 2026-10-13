@@ -1,0 +1,7 @@
+package kz.smartexam.smartexam.repository;
+
+import kz.smartexam.smartexam.model.Quiz;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface QuizRepository extends JpaRepository<Quiz, Long> {
+}

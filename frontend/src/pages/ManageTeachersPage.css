@@ -1,0 +1,205 @@
+.teachers-header {
+    margin-bottom: 28px;
+}
+
+.teachers-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    color: #111827;
+}
+
+.teachers-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.teacher-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.teacher-card h2 {
+    margin: 0 0 20px;
+    font-size: 19px;
+    color: #111827;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.teacher-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #111827;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.teacher-form-actions {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-button {
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    padding: 11px 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+.success-message {
+    margin-top: 16px;
+
+    padding: 11px 14px;
+
+    background: #ecfdf5;
+    color: #047857;
+
+    border: 1px solid #a7f3d0;
+    border-radius: 8px;
+}
+
+.error-message {
+    margin-top: 16px;
+
+    padding: 11px 14px;
+
+    background: #fef2f2;
+    color: #b91c1c;
+
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.teachers-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teachers-table th {
+    padding: 12px 14px;
+
+    text-align: left;
+
+    background: #f9fafb;
+
+    color: #6b7280;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.teachers-table td {
+    padding: 14px;
+
+    font-size: 14px;
+
+    color: #374151;
+
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.teachers-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+.teacher-name {
+    font-weight: 600;
+    color: #111827 !important;
+}
+
+.teacher-email {
+    color: #6b7280 !important;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .teacher-form {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-form-actions {
+        grid-column: auto;
+    }
+}

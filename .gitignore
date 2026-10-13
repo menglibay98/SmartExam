@@ -1,0 +1,21 @@
+# Spring Boot
+**/target/
+**/.idea/
+*.iml
+*.class
+
+# React
+**/node_modules/
+**/dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets
+*.pem
+*.key
+
+# System
+.DS_Store

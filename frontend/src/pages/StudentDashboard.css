@@ -1,0 +1,179 @@
+/* =========================
+   HEADER
+========================= */
+
+.student-dashboard-header {
+    margin-bottom: 32px;
+}
+
+.student-dashboard-header h1 {
+    margin: 0 0 8px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.student-dashboard-header p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.student-section h2 {
+    margin: 0 0 18px;
+
+    font-size: 20px;
+
+    color: #111827;
+}
+
+
+/* =========================
+   ACTION GRID
+========================= */
+
+.student-action-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   ACTION CARD
+========================= */
+
+.student-action-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    min-height: 120px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.student-action-card:hover {
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.student-action-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.student-action-content {
+    flex: 1;
+}
+
+.student-action-content h3 {
+    margin: 0 0 7px;
+
+    font-size: 17px;
+
+    color: #111827;
+}
+
+.student-action-content p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   ARROW
+========================= */
+
+.student-action-arrow {
+    color: #2563eb;
+
+    font-size: 24px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .student-action-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .student-dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .student-action-card {
+        padding: 18px;
+    }
+
+}
